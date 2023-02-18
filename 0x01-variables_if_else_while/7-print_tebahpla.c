@@ -15,7 +15,7 @@ int main(void)
 	while (n >=0 )
 	{
 		putchar(message[n]);
-		n++;
+		n--;
 	}
 	putchar('\n');
 	return (0);
