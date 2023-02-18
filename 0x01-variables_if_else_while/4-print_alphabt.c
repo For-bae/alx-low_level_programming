@@ -9,10 +9,10 @@ int main(void)
 	char *message;
 	int n;
 
-	message ="abcdfghijklmnoprstuvwxyz\n";
+	message = "abcdfghijklmnoprstuvwxyz\n";
 	n = 0;
 
-	while (n <= 26)
+	while (n <= 25)
 	{
 		putchar(message[n]);
 		n++;
