@@ -6,12 +6,11 @@
  */
 int main(void)
 {
-	char *s10 = "0123456789";
 	int n = 0;
 
 	while (n < 10)
 	{
-		putchar(s10[n]);
+		putchar((n % 10) + '0');
 		if(n < 9)
 		{
 			putchar(',');
