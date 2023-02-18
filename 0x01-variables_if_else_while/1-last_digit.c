@@ -17,8 +17,8 @@ int main(void)
     char str[100];
     snprintf( str, 100, "%d", n);
 
-    char lastDigit = str[strlen(str) - 1];
-    int y = atoi(&lastDigit);
+    int lastIndex = strlen(str) - 1;
+    int y = atoi(&str[lastIndex]);
     char* message;
     if (y > 5)
     {
@@ -37,7 +37,7 @@ int main(void)
         message = "";
     }
 
-    printf("Last digit of %s is %c %s\n", str, lastDigit, message);
+    printf("Last digit of %s is %c %s\n", str, str[lastIndex], message);
 
     return (0);
 }
