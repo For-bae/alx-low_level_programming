@@ -39,7 +39,12 @@ int main(void)
         message = "";
     }
 
-    printf("Last digit of %s is %c %s\n", str, str[lastIndex], message);
+    if (n < 0)
+    {
+        y = y * -1;
+    }
+
+    printf("Last digit of %s is %d %s\n", str, y, message);
 
     return (0);
 }
