@@ -9,9 +9,9 @@ int main(void)
 	char *lowers, *caps;
 	int l, c;
 
-	lowers ="abcdefghijklmnopqrstuvwxyz";
-	caps ="ABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
-	l =0;
+	lowers = "abcdefghijklmnopqrstuvwxyz";
+	caps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
+	l = 0;
 	c = 0;
 
 	while (l < 26)
@@ -19,7 +19,7 @@ int main(void)
 		putchar(lowers[l]);
 		l++;
 	}
-	while (c < 26)
+	while (c < 27)
 	{
 		putchar(caps[c]);
 		c++;
