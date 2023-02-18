@@ -38,7 +38,7 @@ int main(void)
         message = "";
     }
 
-    printf("Last digit of %s is %c %s", str, lastDigit, message);
+    printf("Last digit of %s is %c %s\n", str, lastDigit, message);
 
     return (0);
 }
