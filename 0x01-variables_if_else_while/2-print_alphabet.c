@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-        char *message;
-        int n;
+	char *message;
+	int n;
 
-        message ="abcdefghijklmnopqrstuvwxzy";
-        n = 0;
+	message ="abcdefghijklmnopqrstuvwxyz\n";
+	n = 0;
 
-        while (n < 25)
-        {
-                putchar(message[n]);
-                n++;
-        }
-        return (0);
+	while (n <= 26)
+	{
+		putchar(message[n]);
+		n++;
+	}
+	return (0);
 }
