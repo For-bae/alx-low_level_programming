@@ -12,7 +12,7 @@ int main(void)
 	message = "abcdefghijklmnopqrstuvwxyz";
 	n = 25;
 
-	while (n >=0 )
+	while (n >= 0)
 	{
 		putchar(message[n]);
 		n--;
