@@ -10,16 +10,18 @@
 int main(void)
 {
     int n;
+    char str[1000];
+    int lastIndex;
+    int y;
+    char* message;
 
     srand(time(0));
     n = rand() - RAND_MAX / 2;
-
-    char str[100];
-    snprintf( str, 100, "%d", n);
-
-    int lastIndex = strlen(str) - 1;
-    int y = atoi(&str[lastIndex]);
-    char* message;
+    
+    snprintf( str, 1000, "%d", n);
+    lastIndex = strlen(str) - 1;
+    y = atoi(&str[lastIndex]);
+    
     if (y > 5)
     {
         message = "and is greater than 5";
@@ -37,7 +39,7 @@ int main(void)
         message = "";
     }
 
-    printf("Last digit of %s is %c %s\n", str, str[lastIndex], message);
+    printf("Last digit of %s is %c %s", str, str[lastIndex], message);
 
     return (0);
 }
