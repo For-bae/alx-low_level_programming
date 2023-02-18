@@ -9,7 +9,7 @@ int main(void)
 	char *message;
 	int n;
 
-	message ="abcdefghijklmnopqrstuvwxyz\n";
+	message = "abcdefghijklmnopqrstuvwxyz\n";
 	n = 0;
 
 	while (n <= 26)
