@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char s10 = "0123456789";
+	char *s10 = "0123456789";
 	int n = 0;
 
 	while (n < 10)
